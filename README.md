@@ -18,3 +18,4 @@ source make-style-dir.sh 作成するディレクトリ名
 
 - [ ] ハンバーガーメニュー
 - [ ] 円形文字のアニメーション
+- [ ] tweenmax を使った svg アニメーション
