@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+.glass {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba($color: #fff, $alpha: 0.05);
+  box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  &.left {
+    top: -10%;
+    left: -20%;
+    background-color: #a6acec;
+  }
+  &.right {
+    right: -20%;
+    bottom: -10%;
+    background-color: #a56cc1;
+  }
+}
